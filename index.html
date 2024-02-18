@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="FontAwesome-5.15.4/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="Styles/Normalize.css" />
+	<link rel="stylesheet" type="text/css" href="Styles/Styles.css" />
+	<title>HTML - CSS = JavaScript</title>
+</head>
+<body>
+
+	<!-- Start To Top Icon -->
+	<a href="#landing-page" class="back__to__top">
+		<i class="fas fa-arrow-alt-circle-up fa-bounce fa-lg"></i>
+	</a>
+	<!-- End To Top Icon -->
+
+	<!-- Start Setting Box -->
+	<div class="settings__box">
+		<div class="settings__toggle">
+			<i class="fas fa-cog fa-lg settings__gear"></i>
+		</div>
+		<div class="settings__container">
+			<div class="option__box">
+				<h4>Colors</h4>
+				<ul class="colors__list">
+					<li class="active" data-color="rgba(33,155,243,0.8)"></li>
+					<li data-color="rgba(203,16,16,0.8)"></li>
+					<li data-color="rgba(10,116,11,0.8)"></li>
+					<li data-color="rgba(134,87,10,0.8)"></li>
+					<li data-color="rgba(131,10,134,0.8)"></li>
+				</ul>
+			</div>
+			<div class="option__box">
+				<h4>Random Backgrounds</h4>
+				<div class="random__backgrounds">
+					<span class="yes active" data-background="yes">YES</span>
+					<span class="no" data-background="no">NO</span>
+				</div>
+			</div>
+			<div class="option__box">
+				<h4>Toggle Bullets</h4>
+				<div class="toggle__bullets">
+					<span class="show active" data-display="show">SHOW</span>
+					<span class="hide" data-display="hide">HIDE</span>
+				</div>
+			</div>
+			<button class="reset__options" type="submit">Reset Options</button>
+		</div>
+	</div>
+	<!-- End Setting Box -->
+
+	<!-- Start Navagation Bullets -->
+	<div class="navigation__bullets">
+		<div class="nav__bullet" data-section="#about-us">
+			<div class="tool__tip">About</div>
+		</div>
+		<div class="nav__bullet" data-section="#skills">
+			<div class="tool__tip">Skills</div>
+		</div>
+		<div class="nav__bullet" data-section="#galleries">
+			<div class="tool__tip">Gallery</div>
+		</div>
+		<div class="nav__bullet" data-section="#timeline">
+			<div class="tool__tip">Timeline</div>
+		</div>
+		<div class="nav__bullet" data-section="#features">
+			<div class="tool__tip">Features</div>
+		</div>
+		<div class="nav__bullet" data-section="#testimonials">
+			<div class="tool__tip">Testimonials</div>
+		</div>
+		<div class="nav__bullet" data-section="#contact-us">
+			<div class="tool__tip">Contact Us</div>
+		</div>
+	</div>
+	<!-- End Navagation Bullets -->
+
+	<!-- Landing Page Start -->
+	<div class="landing__page" id="landing-page">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="header__area">
+				<div class="logo">
+					My Logo.
+				</div>
+				<div class="links__container">
+					<ul class="ul__links">
+						<li class="li__link">
+							<a class="active" href="#about-us">About</a>
+						</li>
+						<li class="li__link">
+							<a href="#skills">Skills</a>
+						</li>
+						<li class="li__link">
+							<a href="#galleries">Galleries</a>
+						</li>
+						<li class="li__link">
+							<a href="#timeline">Timeline</a>
+						</li>
+						<li class="li__link">
+							<a href="#features">Features</a>
+						</li>
+						<li class="li__link">
+							<a href="#testimonials">Testimonials</a>
+						</li>
+						<li class="li__link">
+							<a href="#contact-us">Contact Us</a>
+						</li>
+					</ul>
+					<button class="header__toggle__menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="introduction__text">
+			<h1>We Are <span class="emphasized__word">Cool Great</span> Guys</h1>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptate vero delectus dicta quod.</p>
+		</div>
+	</div>
+	<!-- Landing Page End -->
+
+	<!-- About Us Start -->
+	<div class="container">
+		<div class="about__us" id="about-us">
+			<div class="about__us__info">
+				<h2 class="about__us__title">About Us</h2>
+				<p class="about__us_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptatum iure quos laudantium reprehenderit eius dolorum numquam, provident voluptates velit enim libero, exercitationem dolore placeat non iusto, modi blanditiis porro quibusdam ducimus explicabo totam nisi, deleniti perspiciatis quam. Cumque hic quidem, iste, quaerat modi corporis exercitationem consequuntur. Animi, omnis ea!</p>
+			</div>
+			<div class="about__us__media">
+				<img src="Images/Illustration.jpg" alt="About Us Image." class="about__us__image" />
+			</div>
+		</div>
+	</div>
+	<!-- About Us End -->
+
+	<!-- Skills Start -->
+	<div class="skills" id="skills">
+		<div class="container">
+			<h2 class="our__skills">Our Skills</h2>
+			<div class="skill__box">
+				<div class="skill__name">HTML</div>
+				<div class="skill__progress">
+					<span class="skill__progress__Line" data-progress="50%"></span>
+				</div>
+			</div>
+			<div class="skill__box">
+				<div class="skill__name">CSS3</div>
+				<div class="skill__progress">
+					<span class="skill__progress__Line" data-progress="70%"></span>
+				</div>
+			</div>
+			<div class="skill__box">
+				<div class="skill__name">JavaScript</div>
+				<div class="skill__progress">
+					<span class="skill__progress__Line" data-progress="60%"></span>
+				</div>
+			</div>
+			<div class="skill__box">
+				<div class="skill__name">Python</div>
+				<div class="skill__progress">
+					<span class="skill__progress__Line" data-progress="80%"></span>
+				</div>
+			</div>
+			<div class="skill__box">
+				<div class="skill__name">Linux</div>
+				<div class="skill__progress">
+					<span class="skill__progress__Line" data-progress="90%"></span>
+				</div>
+			</div>
+			<div class="skill__box">
+				<div class="skill__name">Bash</div>
+				<div class="skill__progress">
+					<span class="skill__progress__Line" data-progress="75%"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Skills End -->
+
+	<!-- Gallery Start -->
+	<div class="gallery" id="galleries">
+		<div class="container">
+			<h2 class="gallery__title">Our Gallery</h2>
+			<div class="images__Box">
+				<img src="Images/Galleries/Gallery01.jpg" alt="Gallery Image One" class="gallery__image" />
+				<img src="Images/Galleries/Gallery02.jpg" alt="Gallery Image Two" class="gallery__image" />
+				<img src="Images/Galleries/Gallery03.jpg" alt="Gallery Image Three" class="gallery__image" />
+				<img src="Images/Galleries/Gallery04.jpg" alt="Gallery Image Four" class="gallery__image" />
+				<img src="Images/Galleries/Gallery05.jpg" alt="Gallery Image Five" class="gallery__image" />
+				<img src="Images/Galleries/Gallery06.jpg" alt="" class="gallery__image" />
+				<img src="Images/Galleries/Gallery07.jpg" alt="" class="gallery__image" />
+				<img src="Images/Galleries/Gallery08.jpg" alt="" class="gallery__image" />
+				<img src="Images/Galleries/Gallery09.jpg" alt="" class="gallery__image" />
+				<img src="Images/Galleries/Gallery10.jpg" alt="" class="gallery__image" />
+				<img src="Images/Galleries/Gallery12.jpg" alt="" class="gallery__image" />
+			</div>	
+		</div>
+	</div>
+	<!-- Gallery End -->
+
+	<!-- TimeLine Start -->
+	<div class="timeline" id="timeline">
+		<div class="container">
+			<div class="timeline__content">
+				<div class="timeline__year">2005</div>
+				<div class="timeline__left">
+					<div class="content">
+						<h3>Timeline Head</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Est iusto repellat maxime quaerat saepe nihil deleniti ipsa autem dignissimos, nulla!</p>
+					</div>
+				</div>
+				<div class="clear__fix"></div>
+				<div class="timeline__right">
+					<div class="content">
+						<h3>Timeline Head</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Est iusto repellat maxime quaerat saepe nihil deleniti ipsa autem dignissimos, nulla!</p>
+					</div>
+				</div>
+				<div class="clear__fix"></div>
+				<div class="timeline__year">2010</div>
+				<div class="timeline__left">
+					<div class="content">
+						<h3>Timeline Head</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Est iusto repellat maxime quaerat saepe nihil deleniti ipsa autem dignissimos, nulla!</p>
+					</div>
+				</div>
+				<div class="clear__fix"></div>
+				<div class="timeline__right">
+					<div class="content">
+						<h3>Timeline Head</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Est iusto repellat maxime quaerat saepe nihil deleniti ipsa autem dignissimos, nulla!</p>
+					</div>
+				</div>
+				<div class="clear__fix"></div>
+				<div class="timeline__left">
+					<div class="content">
+						<h3>Timeline Head</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Est iusto repellat maxime quaerat saepe nihil deleniti ipsa autem dignissimos, nulla!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- TimeLine End -->
+
+	<div class="clear__fix"></div>
+
+	<!-- Our Features Start -->
+	<div class="features" id="features">
+		<h2 class="features__title">Our Features</h2>
+		<div class="container">
+			<div class="feature__box">
+				<img src="Images/Features/Feature01.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">Development</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature02.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">BackEnd</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature03.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">Marketing</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature04.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">Socials</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature05.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">eCommerce</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature06.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">Software Cycle</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature07.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">Dev Sec Ops</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="feature__box">
+				<img src="Images/Features/Feature08.jpg" alt="Our Features Image" class="feature__image" />
+				<h4 class="feature__name">Accounting</h4>
+				<p class="feature__description">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</p>
+			</div>
+		</div>
+	</div>	
+	<!-- Our Features End -->
+
+	<div class="clear__fix"></div>
+	
+	<!-- Testimonials Start -->
+	<div class="testimonials" id="testimonials">
+		<div class="container">
+			<h2 class="testimonials__title">Testimonials</h2>
+			<div class="testimonial__box">
+				<p class="testimonial__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, hic similique, necessitatibus cumque libero praesentium.</p>
+				<div class="testimonial__person">
+					<img src="https://placehold.it/80/DDD" alt="" class="person__image" />
+					<h4 class="person__name">Ahmad M. Waddah</h4>
+					<p class="person__job">CEO and Founder at Ferrari Ltd.</p>
+				</div>
+			</div>
+			<div class="testimonial__box">
+				<p class="testimonial__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, hic similique, necessitatibus cumque libero praesentium.</p>
+				<div class="testimonial__person">
+					<img src="https://placehold.it/80/AEH" alt="" class="person__image" />
+					<h4 class="person__name">Ahmad M. Waddah</h4>
+					<p class="person__job">CEO and Founder at Ferrari Ltd.</p>
+				</div>
+			</div>
+			<div class="testimonial__box">
+				<p class="testimonial__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, hic similique, necessitatibus cumque libero praesentium.</p>
+				<div class="testimonial__person">
+					<img src="https://placehold.it/80/ACE" alt="" class="person__image" />
+					<h4 class="person__name">Ahmad M. Waddah</h4>
+					<p class="person__job">CEO and Founder at Ferrari Ltd.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Testimonials End -->
+
+	<div class="clear__fix"></div>
+
+	<!-- Contact Us Start -->
+	<div class="contact__us" id="contact-us">
+		<div class="contact__us__overlay"></div>
+		<div class="container">
+			<h2 class="contact__us__title">Contact Us</h2>
+			<form action="" class="contact__us__form">
+				<div class="form__left">
+					<input type="textarea" placeholder="Full Name." name="full-name" />
+					<input type="text" placeholder="Mobile." name="mobile" />
+					<input type="email" placeholder="Email." name="email" autocomplete="on" />
+					<input type="text" placeholder="Subject." name="subject" />
+				</div>
+				<div class="form__right">
+					<textarea name="message" placeholder="Type Your Message."></textarea>
+					<input type="submit" value="Send" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Contact Us End -->
+	
+	<script defer src="FontAwesome-5.15.4/js/all.js"></script>
+	<script defer src="Scripts/Scripts.js"></script>
+</body>
+</html>
